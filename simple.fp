@@ -1,5 +1,6 @@
 pipeline "simple" {
     description = "A simple pipeline with my name: ${var.my_name}"
+    title = "Simple pipeline"
 
     step "transform" "echo" {
         value = "Hello World ${var.my_name}"
@@ -19,6 +20,8 @@ pipeline "simple" {
 }
 
 pipeline "simple2" {
+    title = "Simple pipeline 2"
+
     step "transform" "echo" {
         value = "echo"
     }
@@ -38,7 +41,8 @@ pipeline "simple2" {
 }
 
 pipeline "enum_param" {
-
+    title = "Enum param pipeline"
+    
     param "string_param" {
         type = string
         default = "value1"

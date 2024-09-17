@@ -1,4 +1,6 @@
 pipeline "slow" {
+    title = "Slow pipeline"
+    
     step "sleep" "sleep" {
         duration = "1s"
 
