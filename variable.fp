@@ -1,11 +1,17 @@
 variable "my_name" {
   type = string
   default = "flowpipe"
+  tags = {
+    folder = "misc"
+  }
 }
 
 variable "string_var" {
   type = string
   default = "flowpipe_string"
+  tags = {
+    folder = "misc"
+  }
 }
 
 variable "mandatory_tag_keys" {
@@ -18,6 +24,9 @@ variable "mandatory_tag_keys" {
 variable "var_number" {
   type        = number
   default = 42
+  tags = {
+    folder = "deprecated"
+  }
 }
 
 variable "var_map" {
@@ -33,6 +42,9 @@ variable "var_map_number" {
     default = {
         key1 = 1
         key2 = 2
+    }
+    tags = {
+      folder = "deprecated"
     }
 }
  
