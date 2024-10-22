@@ -1,5 +1,0 @@
-connection "steampipe" "one" {
-  host = "localhost"
-  port = 9193
-  username = "steampipe"
-}
